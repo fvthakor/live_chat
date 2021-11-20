@@ -30,7 +30,7 @@ The website is built in my favourite Tech Stack and deployed on [Heroku](https:/
 Deployment can be done in 3 easy steps.
 
 - Login to [Heroku](https://heroku.com) or signup for an account if you don't have one.
-- Create a `New Project` and select YOUR GitHub repository of the chat project.
+- Create a `Creat > Create new app` and select YOUR GitHub repository of the chat project.
 - Wait for Heroku to deploy your project to production.
 
 # License
