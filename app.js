@@ -9,7 +9,7 @@ app.use(cors())
 const io = new Server(server);
 app.use(express.static(path.join(__dirname, './my-app/dist')));
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/my-app/dist/index.html');
+  res.sendFile(__dirname + './my-app/dist/index.html');
 });
 
 io.on('connection', (socket) => {
