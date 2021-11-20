@@ -1,5 +1,6 @@
 import { Component, OnInit, Injectable } from '@angular/core';
-import { Socket } from 'ngx-socket-io';
+import { io } from 'socket.io-client';
+import { environment } from '../../../environments/environment'
 @Injectable()
 @Component({
   selector: 'app-chat',
@@ -7,7 +8,8 @@ import { Socket } from 'ngx-socket-io';
   styleUrls: ['./chat.component.scss']
 })
 export class ChatComponent implements OnInit {
-  constructor(private socket:Socket) { }
+  private socket: any;
+  constructor() { }
   //messages:any[] = [];
   private messages: any[] = [];
   condition:boolean = false;
@@ -21,8 +23,8 @@ export class ChatComponent implements OnInit {
     },
   ];
   ngOnInit(): void {
+    this.socket = io(`${environment.socketUrl}`, { transports: ['websocket'] });
     this.socket.on('chat message', (data: any) => {
-      //this.messages.push(data)
       if(data.user.name == this.username){
         var $reply = true;
         data.user.name = '';
@@ -31,7 +33,7 @@ export class ChatComponent implements OnInit {
       }
       data.reply = $reply;
       this.messages.push(data);
-    }); 
+    });
   }
 
   saveUser(event){
