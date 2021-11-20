@@ -1,5 +1,5 @@
 # Socket.io chat demo
-Example Project demonstrating how to develop realtime chat application with socket and tailwindcss 
+Example Project demonstrating how to develop Real-time chat application using nodejs, expressjs, socket.io and angular
 
 # Features
 chat App functionality: 
