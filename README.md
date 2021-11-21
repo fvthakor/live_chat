@@ -14,7 +14,7 @@ The website is built in my favourite Tech Stack and deployed on [Heroku](https:/
 
 - [Angular](https://angular.io/) for building Angular Components.
 - [Nebular](https://akveo.github.io/nebular/) for styling.
-- [Nodejs](https://nodejs.org/en/) for server.
+- [Nodejs](https://nodejs.org/en/) for server side code(backend)..
 - [Expressjs](https://expressjs.com/) for routing.
 - [Socket.io](https://socket.io/) for real time chat.
 
@@ -38,7 +38,7 @@ Deployment can be done in 3 easy steps.
 This code is completely open source and free to use. Use it for client projects or your own project.
 
 # Support
-<a href="https://www.buymeacoffee.com/fvthakor"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=fvthakor&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"></a>
+<a href="https://www.buymeacoffee.com/fvthakor" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 # My portfolio
 [fulajithakor.netlify.app](https://fulajithakor.netlify.app/)
